@@ -11,6 +11,27 @@
     </div>
   <% end %>
 
+    <div class="field">
+      <%= f.label :name, "Name" %><br>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :email %><br>
+      <%= f.text_field :email %>
+    </div>
+    <div class="field">
+      <%= f.label :photo_url, "Photo URL" %><br>
+      <%= f.text_field :photo_url %>
+    </div>
+    <div class="field">
+      <%= f.label :cost, "Cost" %><br>
+      <%= f.number_field :cost %>
+    </div>
+    <div class="field">
+      <%= f.label :description, "Description" %><br>
+      <%= f.text_field :description %>
+    </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -6,4 +6,7 @@ class Listing
   field :photo_url, type: String
   field :cost, type: Integer
   field :description, type: String
+
+  validates_presence_of :name, :email, :photo_url, :cost, :description
+  validates :photo_url, :uniqueness => true
 end
