@@ -1,5 +1,5 @@
 class BuyMailer < ApplicationMailer
-  default from: 'notifications@example.com'
+  default from: 'artmarketnotifications@gmail.com'
  
   def buy_email(buyer, seller, listing)
     @buyer = buyer
