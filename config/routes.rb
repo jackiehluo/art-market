@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'register' => 'users#new'
   get 'users' => 'users#index'
   get 'edit' => 'users#edit'
+  get 'show' => 'users#show'
 
   get 'session/create'
   get 'session/destroy'
