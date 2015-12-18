@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'listings#index'
 
   get 'new-listing' => 'listings#new'
+  get :send_interest_email, to: 'listings#send_interest_email', as: :send_interest_email
 
   get 'register' => 'users#new'
   get 'users' => 'users#index'

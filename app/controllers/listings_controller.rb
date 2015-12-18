@@ -61,6 +61,14 @@ class ListingsController < ApplicationController
     end
   end
 
+  def send_interest_email
+      @listing = Listing.find(params[:id])
+      @buyer = params[:email]
+      BuyMailer.interest_email(@buyer, @listing).deliver
+      flash[:notice] = "Message has been sent."
+      redirect_to root_url
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_listing
