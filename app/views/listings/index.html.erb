@@ -7,7 +7,10 @@
     Name: <%= listing.name %><br>
     Cost: $<%= listing.cost %><br>
     Description: <%= listing.description %><br>
-    <%= link_to "Message Seller", :controller => "listings", :action => "send_interest_email", :id => listing.id, :email => @current_user.email %><br><br><br><br>
+    <% if listing.email != @current_user.email %>
+        <%= link_to "Message Seller", :controller => "listings", :action => "send_interest_email", :id => listing.id, :email => @current_user.email %><br>
+    <% end %>
+    <br><br><br>
 
 <% end %>
 

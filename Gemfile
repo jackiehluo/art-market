@@ -27,6 +27,9 @@ gem 'mongoid', '~> 5.0.0.beta'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# Use Figaro for env variables
+gem 'figaro', '~> 0.7.0'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
