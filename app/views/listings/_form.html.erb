@@ -11,28 +11,39 @@
     </div>
   <% end %>
 
-    <div class="field">
-      <%= f.label :name, "Artwork Name" %><br>
-      <%= f.text_field :name %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-md-offset-5">
+        <%= f.label :name, "Artwork Name" %><br>
+        <%= f.text_field :name, {class: "form-control"} %>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-5">
+        <%= f.label :email %><br>
+        <%= f.text_field :email, {class: "form-control"} %>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-5">
+        <%= f.label :photo_url, "Photo URL" %><br>
+        <%= f.text_field :photo_url, {class: "form-control"} %>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-5">
+        <%= f.label :cost, "Cost" %><br>
+        <%= f.number_field :cost, {class: "form-control"} %>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-5">
+        <%= f.label :description, "Description" %><br>
+        <%= f.text_field :description, {class: "form-control"} %>
+      </div>
+    </div><br>
+    <div class="actions">
+      <%= f.submit "Submit", :class => "btn btn-success" %>
     </div>
-    <div class="field">
-      <%= f.label :email %><br>
-      <%= f.text_field :email %>
-    </div>
-    <div class="field">
-      <%= f.label :photo_url, "Photo URL" %><br>
-      <%= f.text_field :photo_url %>
-    </div>
-    <div class="field">
-      <%= f.label :cost, "Cost" %><br>
-      <%= f.number_field :cost %>
-    </div>
-    <div class="field">
-      <%= f.label :description, "Description" %><br>
-      <%= f.text_field :description %>
-    </div>
-
-  <div class="actions">
-    <%= f.submit "Submit", :class => "btn btn-success" %>
   </div>
 <% end %>
